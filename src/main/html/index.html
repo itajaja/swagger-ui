@@ -76,7 +76,8 @@
         docExpansion: "list",
         jsonEditor: false,
         defaultModelRendering: 'model',
-        showRequestHeaders: false
+        showRequestHeaders: false,
+        authorizations: {'jwt': new SwaggerClient.ApiKeyAuthorization('Authorization', 'JWT', 'header')},
       });
 
       function addApiKeyAuthorization(){
